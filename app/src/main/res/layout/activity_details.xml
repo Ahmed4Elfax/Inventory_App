@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context="com.example.android.inventoryapp.DetailsActivity">
+
+    <LinearLayout
+        android:id="@+id/details"
+        style="@style/default_linear"
+        tools:ignore="UselessParent">
+
+        <!-- Product image -->
+        <ImageView
+            android:id="@+id/details_product_image"
+            style="@style/ProductImage"
+            android:src="@drawable/baseline_image_black_48"
+            tools:ignore="ContentDescription"></ImageView>
+
+        <!-- Product name field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                style="@style/EditorTitleStyle"
+                android:text="@string/product_name" />
+
+            <TextView
+                android:id="@+id/details_product_name"
+                style="@style/EditorField" />
+
+        </LinearLayout>
+
+        <!-- Product price field -->
+        <LinearLayout
+            style="@style/View_item">
+
+            <TextView
+                style="@style/EditorTitleStyle"
+                android:text="Price" />
+
+            <TextView
+                android:id="@+id/details_product_price"
+                style="@style/EditorField" />
+            <TextView
+                android:id="@+id/label_price"
+                style="@style/PriceUnitsStyle"
+                android:text="@string/currency_symbol" />
+
+        </LinearLayout>
+
+        <!-- Product supplier name field -->
+        <LinearLayout
+            style="@style/View_item">
+
+            <TextView
+                style="@style/EditorTitleStyle"
+                android:text="@string/supplier" />
+
+            <TextView
+                android:id="@+id/details_product_supname"
+                style="@style/EditorField" />
+
+        </LinearLayout>
+
+        <!-- Product supplier email field -->
+        <LinearLayout
+            style="@style/View_item">
+
+            <TextView
+
+                style="@style/EditorTitleStyle"
+                android:text="@string/email" />
+
+            <TextView
+                android:id="@+id/details_product_supmail"
+                style="@style/EditorField" />
+
+
+        </LinearLayout>
+
+        <!-- Product quantity sell / add action buttons -->
+        <LinearLayout
+            style="@style/View_item">
+
+            <TextView
+
+                style="@style/EditorTitleStyle"
+                android:text="@string/category_measurement" />
+            <TextView
+                android:id="@+id/details_product_quantity"
+                style="@style/EditorField" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addProductButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="16dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="Buy"
+            android:textColor="@android:color/white" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

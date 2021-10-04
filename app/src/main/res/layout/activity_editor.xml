@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.inventoryapp.EditorActivity">
+
+    <LinearLayout
+        style="@style/field">
+
+        <!-- Product name field -->
+        <TextView
+            style="@style/EditorTitleStyle"
+            android:text="@string/product_name" />
+
+        <LinearLayout
+            style="@style/editor"
+            tools:ignore="RtlSymmetry">
+
+            <EditText
+                android:id="@+id/edit_product_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_product_name"
+                android:inputType="textCapWords" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Product quantity field -->
+    <LinearLayout style="@style/field">
+
+
+        <TextView
+            style="@style/EditorTitleStyle"
+            android:text="@string/category_measurement" />
+
+        <LinearLayout
+            style="@style/editor"
+            tools:ignore="RtlSymmetry">
+
+            <EditText
+                android:id="@+id/edit_product_quantity"
+                style="@style/EditorFieldStyle"
+                android:hint="0"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Product price field -->
+    <LinearLayout style="@style/field">
+
+        <TextView
+            style="@style/EditorTitleStyle"
+            android:text="Price" />
+
+        <RelativeLayout
+            style="@style/editor"
+            tools:ignore="RtlSymmetry">
+
+
+            <EditText
+                android:id="@+id/edit_product_price"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/price_hint_editor_activity"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/label_price"
+                style="@style/PriceUnitsStyle"
+                android:text="@string/currency_symbol" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- Product supplier name field -->
+    <LinearLayout style="@style/field">
+
+        <TextView
+            style="@style/EditorTitleStyle"
+            android:text="@string/supplier" />
+
+        <LinearLayout
+            style="@style/editor"
+            tools:ignore="RtlSymmetry">
+
+
+            <EditText
+                android:id="@+id/edit_product_supplier"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_supplier_name"
+                android:inputType="text"
+                android:lines="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Product supplier email field -->
+    <LinearLayout style="@style/field">
+
+        <TextView
+            style="@style/EditorTitleStyle"
+            android:text="@string/email" />
+
+        <LinearLayout
+            style="@style/editor"
+            tools:ignore="RtlSymmetry">
+
+
+            <EditText
+                android:id="@+id/edit_product_email"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_email_supplier"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Product image -->
+    <ImageView
+        android:id="@+id/product_image"
+        style="@style/ProductImage"
+        android:src="@drawable/baseline_image_black_48"
+        tools:ignore="ContentDescription"></ImageView>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="25dp">
+    <!-- Add product action button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/baseline_add_photo_alternate_white_48" />
+</RelativeLayout>
+</LinearLayout>

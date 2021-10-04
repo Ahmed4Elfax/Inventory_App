@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+
+    <!-- Label for overflow menu option that inserts fake item data into the app [CHAR LIMIT=20] -->
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+
+    <!-- Label for overflow menu option that deletes all items data in the app [CHAR LIMIT=20] -->
+    <string name="action_delete_all_entries">Delete All Items</string>
+
+    <!-- Title text for the empty view, which describes the empty house image [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text">It\'s a item lonely here...</string>
+
+    <!-- Subtitle text for the empty view that prompts the user to add a item [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text">Get started by adding a item</string>
+
+    <!-- Label for overview category of attributes in the editor [CHAR LIMIT=30] -->
+    <string name="product_name">Product</string>
+
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_product_name">Product name</string>
+
+    <!-- Hint for the price field -->
+    <string name="price_hint_editor_activity">30.00</string>
+
+    <!-- Currency symbol for the price field -->
+    <string name="currency_symbol">$</string>
+
+    <!-- Label for the product's photo -->
+    <string name="product_photo">Image</string>
+
+    <!-- Label for grade information in the editor [CHAR LIMIT=30] -->
+    <string name="product_grade">Product grade</string>
+
+
+    <!-- Label for the product's supplier -->
+    <string name="supplier">Supplier</string>
+
+    <!-- Hint for the supplier's name -->
+    <string name="hint_supplier_name">Supplier Name</string>
+
+    <!-- Label for the product's mail -->
+    <string name="email">Email</string>
+
+    <!-- Hint for the supplier's e-mail -->
+    <string name="hint_email_supplier">ahmed55fax@gnail.com</string>
+
+    <!-- Label for measurement information in the editor [CHAR LIMIT=30] -->
+    <string name="category_measurement">Quantity</string>
+
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_product_quantity">Quantity</string>
+
+    <!-- Units for weight of the product (kilograms) [CHAR LIMIT=5] -->
+    <string name="unit_product_quantity">pcs</string>
+
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_product">Add Product</string>
+    <string name="edit_product">Edit Product</string>
+
+    <string name="intentType">image/*</string>
+    <string name="selectPicture">Select picture please!</string>
+    <string name="add_all_info">Enter All information, with real data please!</string>
+    <string name="discard_changes">Discard your changes and keep Editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+
+
+    <string name="data_insert_failed">Product insert has failed!</string>
+    <string name="data_insert_successful">Product insert is successful!</string>
+    <string name="data_update_failed">Product update has failed!</string>
+    <string name="data_update_successful">Product update is successful!</string>
+
+    <string name="received_shipment">Enter the received shipment quantity:</string>
+    <string name="delete_failed">Delete has failed, can not delete product!</string>
+    <string name="delete_successful">Delete was successful!</string>
+
+    <string name="ordering_products">Ordering Products</string>
+    <string name="send_email">Send Email</string>
+
+
+</resources>

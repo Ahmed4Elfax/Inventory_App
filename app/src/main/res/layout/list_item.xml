@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item in the list of pets -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin">
+
+    <RelativeLayout
+        android:id="@+id/product_list_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <!-- Product name text -->
+        <TextView
+            android:id="@+id/list_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorAccent"
+            tools:ignore="RelativeOverlap,RtlHardcoded,RtlSymmetry"
+            tools:text="Product Name" />
+
+        <!-- Product price text -->
+        <TextView
+            android:id="@+id/list_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_item_name"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:text="$"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+
+        <!-- Product quantity text -->
+        <TextView
+            android:id="@+id/list_item_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_item_price"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:text="In stock"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/black"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <!-- Product fast sell button  -->
+        <ImageView
+            android:id="@+id/list_item_button"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:focusable="false"
+            android:src="@drawable/baseline_shopping_cart_black_48"
+            tools:ignore="ContentDescription,RtlHardcoded"></ImageView>
+
+    </RelativeLayout>
+</LinearLayout>
